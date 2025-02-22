@@ -166,5 +166,5 @@ print("Нажата кнопка финиш")
 checkout_complete = driver.find_element(By.XPATH, "//*[contains(text(), 'Thank you for your order!')]")
 value_checkout_complete = checkout_complete.text
 print(value_checkout_complete)
-assert value_checkout_complete == 'Thank you for your order!'
+assert value_checkout_complete == 'Thank you for your order!', 'Ошибка! Информация о выполнении заказа некорректна'
 print('Информация о выполнении заказа корректна')
